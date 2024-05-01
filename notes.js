@@ -8,5 +8,5 @@
  * Blocking code - block the flow of program. read file synchronously.
  * Non blocking code - does not block execution. read file asynchronously.
  * Blocking code and non blocking code depends on the use case. reading a file to giving the necessary information and other works can execute simultaneously in non blocking code. user registration data, to write the date in database, to send a successful login message use blocking code.
- * 
+ * fetch is high priority callback. It is like another task queue. promise queue.
  */
