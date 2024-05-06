@@ -1,0 +1,21 @@
+.text{
+    text-align: center;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+}
+.start, .stop{
+    background-color: #7d0b0b;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    padding: 8px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.start:hover, .stop:hover{
+    background-color: #292525;
+}
