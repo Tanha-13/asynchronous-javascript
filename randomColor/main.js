@@ -8,12 +8,25 @@ const randomHexColor = () => {
   return `#${color}`;
 };
 
+//random color rgb code generator
+function randomNumber(){
+    return Math.floor(Math.random() * 256);
+}
+const randomRgbColor = function(){
+    let redColor = randomNumber();
+    let greenColor = randomNumber();
+    let blueColor = randomNumber();
+    return `rgb(${redColor},${greenColor},${blueColor})`;
+}
+
 //start function
 let intervalId;
 function startChangingColor() {
   if (!intervalId) {
     intervalId = setInterval(() => {
-      document.body.style.backgroundColor = randomHexColor();
+    //   document.body.style.backgroundColor = randomHexColor();
+      document.body.style.backgroundColor = randomRgbColor();
+      document.querySelector(".colorName").innerHTML = `Color: ${randomRgbColor()}`;
     }, 1000);
   }
 }
