@@ -11,9 +11,11 @@
  * fetch is high priority callback. It is like another task queue. promise queue.
  */
 
-// Topic: setTimeout
+// Topic: setTimeout and clearTimeout
 /**
  * setTimeout() methods calls an api. this methods is available in web apis which can be retrieved through browsers. the first parameter of setTimeout() is handler which is basically a callback but it has no identification. It executes one time. 
  * clearTimeout() method takes a reference of which setTimeout is to be cleared.
  * 
  */
+
+// Topic: setInterval and clearInterval
